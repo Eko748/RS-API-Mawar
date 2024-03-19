@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Untuk mencegah akses langsung ke folder public
+  RewriteCond %{REQUEST_URI} ^/public/(.+)$
+  RewriteRule ^ - [F]
+
+  # Untuk melayani file statis dari folder public
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
