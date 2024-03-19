@@ -14,9 +14,9 @@
       "dialect": "mysql"
     },
     "production": {
-      "username": "root",
-      "password": "",
-      "database": "erp_rs",
+      "username": "u778534470_rs_mawar",
+      "password": "RSMawar123",
+      "database": "u778534470_rs_mawar",
       "host": "localhost",
       "dialect": "mysql"
     }
